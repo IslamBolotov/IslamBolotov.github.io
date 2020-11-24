@@ -9,10 +9,10 @@
 }
 /*Навигатор*/
 nav{
-    position: fixed;
     z-index: 5;
-    background-color: #e1e1e1
 }
+
+
 
 ul, li{
     display: block;
@@ -28,24 +28,46 @@ ul, li{
 .menu__item a{
     font-family:  'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 800;
     padding: 10px 20px;
     color: #000;
-    border-radius: 5px;
+    border-radius: 2px;
+    cursor: pointer;
 }
 
 .menu__item a:hover{
     text-decoration: none;
-    background-color: burlywood;
-    box-shadow: 0px 5px 5px black;
+    background-color: rgba(95, 151, 91);
+    box-shadow: 0px 0px  2px 0px black inset;
     transition: 0.5s ease;
 
 }
 
+/* анимационный текст*/
+
+  .wrapper {
+    width: 90%;
+    margin-top: 100px;
+    font-size: 28px;
+    height: 175px;
+  }
+  
+  .wave {
+    background-color: rgb(27, 27, 41);
+    color: #c49d9d;
+    animation: 0.5s color infinite;
+  }
+  
+  @keyframes color {
+    50% {
+      color: #8fc8ae;
+    }
+  }
+
 /*первый экран второя строка*/
 
 .offer{
-    padding-top: 250px;
+    margin-top: 100px;
     flex-direction: column;
 }
 .ramka-1{
@@ -79,6 +101,15 @@ ul, li{
     font-family: 'Cormorant Garamond', serif;
     font-size: 22px;
     font-weight: 400;
+}
+
+.back__of__main__page{
+    background-image: url("../img/bit-banner.jpg");
+    opacity: 0.5;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 80%;
 }
 
 /*кнопки*/
@@ -133,18 +164,6 @@ ul, li{
 }
 
 /*Серый фон*/
-/*
-.photo{
-    display: block;
-    background-color: #e1e1e1;
-    margin-top: -100px;
-    margin-right: -38%;
-    height: 903px;
-    z-index: -2;
-    padding-top: 150px;
-    padding-bottom: auto;
-    padding-left: 60px;
-}*/
 
 
 
@@ -217,7 +236,7 @@ ul, li{
 }
 
 .skill__line{
-    width: 350px;
+    width: 300px;
     height: 15px;
     background-color: #dfdfdf;
 }
@@ -319,24 +338,46 @@ ul, li{
 }
 
 .my__works__but{
-    display: none;
     justify-content: space-between;
     margin-top: -50px;
-    margin-left: 50px;
-    width: 120px;
-    height: 29px;
+    margin-left: 10px;
+    width: 50px;
+    height: auto;
     position: absolute;
-    z-index: 3;
+    z-index: 15;
     cursor: pointer;
 }
-.my__works__icon:hover {
+
+
+.my__works__icon>div>img:hover {
     opacity: 0.5;
     transition: 0.5s ease;
 }
 
-.my__works__icon:hover .my__works__but{
-    display: flex;
-    opacity: 1;
+.work-text{
+    z-index: 2;
+    display: none;
+    margin-top: -150px;
+    margin-left: 80px;
+    position: absolute;
+}
+
+.work-text:hover {
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.work-text:hover .my__works__icon{
+    opacity: 0.1;
+}
+
+.my__works__icon:hover .work-text{
+    display: block;
+}
+
+.my__works__but:hover::after{
+    content: attr(data-title);
+    color: burlywood;
 }
 
 .load__button{

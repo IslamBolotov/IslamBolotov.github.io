@@ -9,16 +9,19 @@
     <base target="_blank">
 <link rel="stylesheet" href="./js/main.js">
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/main.js"></script>
+    
     <title>Ислам Болотов</title>
 </head>
 <body>
-   
+    <script src="./js/main.js"></script>
     <header class="header">
-      
+        <div class="back__of__main__page"> </div>
+            
         <div class="container">
             
-            <div class="row">
+
+           
+            <div class="row nav-row">
                 <div class="col-lg-2">
                     <img src="./img/islam-logo.png" alt="logo" class="logo animated swing">
                 </div>
@@ -26,19 +29,19 @@
                 <nav>
                     <ul class="menu d-flex justify-content-center">
                         <li class="menu__item">
-                            <a href="#">Home</a>
+                            <a name="">Home</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">About</a>
+                            <a >About</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Service</a>
+                            <a >Service</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Portfolio</a>
+                            <a >Portfolio</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#">Contact</a>
+                            <a >Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -46,26 +49,17 @@
         </div>
         <div class="row">
             <div class="col-lg-5 ">
-                <div class="offer d-flex">
-                    <div class="ramka-1"></div>
-                    <h1 class="offer__title">islam bolotov</h1>
-                    <h3 class="offer__text">Front-end developer</h3>
+                <div class="wrapper">
+                    
+                    <p class="text">Islam Bolotov Front-end Developer</p>
+                    <!-- <h3 class="offer__text">Front-end developer</h3>
                     <div class="btn">
                         <button class="offer__btn-1">Hire me</button>
                         <button class="offer__btn-2">Explore More</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="col-lg-6">
-
-                <div class="photo d-flex">
-    
-                    <img src="./img/my.png" alt="my_photo " class="my_photo animated fadeInRight">
-                    <div class="ramka ">
-                        <div class="line"></div>
-                    </div>
-                </div>
-            </div>
+         
         </div>
 
     </div>
@@ -78,7 +72,10 @@
             <h2 class="about__theme">ABOUT</h2>
             <img src="./img/line.png" alt="" class="about_line">
             <h6 class="about__text">Hello! I'm Islam, a full stuck developer, a Ruby enthusiast, and a guy slighty obsessed for code quality. Also I'm a co-founder of pykod.com. I’m currently available for freelance work. If you have a project that you want to get started or think you need my help with something, then get in touch.</h6>
-            <button id="dow-btn" class="btn about_btn"><a href="https://drive.google.com/file/d/1fnsVRIvl8ogwCWTLM-yZOP7IsXljULiL/view?usp=sharing" download="download">DOWNLOAD MY CV</a></button>
+            <form method="get" action="./Резюме IB.doc">
+                <button id="dow-btn" type="submit" class="btn about_btn">DOWNLOAD MY CV</button>
+               
+             </form>
         </div>    
         </div>
         <div class="row">
@@ -176,53 +173,32 @@
             </div>  
             <div class="works__block">
                 <div class="my__works__icon">
-                    <img src="./img/img_1.png" alt="">
-                    <div class="my__works__but">
-                        <img src="./img/eye.png" alt="">
-                        <img src="./img/dowload.png" alt="">
-                        <img src="./img/share.png" alt="">
+                    <div>
+                        <img src="./img/bookstore.jpg" width="400px" height="300px" alt="">
+                        <h2 class="work-text">Internet Store</h2>
                     </div>
-            </div> 
-            <div class="my__works__icon">
-                <img src="./img/img_2.png" alt="">
-                <div class="my__works__but">
-                    <img src="./img/eye.png" alt="">
-                    <img src="./img/dowload.png" alt="">
-                    <img src="./img/share.png" alt="">
-                </div>
-            </div> 
-            <div class="my__works__icon">
-                <img src="./img/img_3.png" alt="">
-                <div class="my__works__but">
-                    <img src="./img/eye.png" alt="">
-                    <img src="./img/dowload.png" alt="">
-                    <img src="./img/share.png" alt="">
-                </div>
-            </div> 
-            <div class="my__works__icon">
-                <img src="./img/img_4.png" alt="">
-                <div class="my__works__but">
-                    <img src="./img/eye.png" alt="">
-                    <img src="./img/dowload.png" alt="">
-                    <img src="./img/share.png" alt="">
-                </div>
-            </div> 
-            <div class="my__works__icon">
-                <img src="./img/img_5.png" alt="">
-                <div class="my__works__but">
-                    <img src="./img/eye.png" alt="">
-                    <img src="./img/dowload.png" alt="">
-                    <img src="./img/share.png" alt="">
-                </div>
-            </div> 
-            <div class="my__works__icon">
-                <img src="./img/img_6.png" alt="">
-                <div class="my__works__but">
-                    <img src="./img/eye.png" alt="">
-                    <img src="./img/dowload.png" alt="">
-                    <img src="./img/share.png" alt="">
-                </div>
-            </div> 
+                    <a href="https://github.com/IslamBolotov/internet-store">
+                        <img class="my__works__but" src="./img/GitHub-logo.png" alt="">
+                    </a>
+                </div> 
+                <div class="my__works__icon">
+                    <div>
+                        <img src="./img/kpi.jpg" width="400px" height="300px" alt="">
+                        <h2 class="work-text">KPI List</h2>
+                    </div>
+                    <a href="https://github.com/IslamBolotov/KpiList">
+                        <img class="my__works__but" src="./img/GitHub-logo.png" alt="">
+                    </a>
+                </div> 
+                <div class="my__works__icon">
+                    <div>
+                        <img src="./img/portfolio.png" width="351px" height="320px" alt="">
+                        <h2 class="work-text">Portfolio</h2>
+                    </div>
+                    <a href="https://github.com/IslamBolotov/IslamBolotov.github.io">
+                        <img class="my__works__but" src="./img/GitHub-logo.png" alt="">
+                    </a>
+                </div> 
         </div>
     </div>
     <div class="row">
