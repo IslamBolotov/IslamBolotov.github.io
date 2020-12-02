@@ -187,6 +187,7 @@ ul, li{
 /*Второй экран*/
 
 .aboutme{
+    margin-top: 70px;
     text-align: center;
     padding: 120px;
     font-family: 'Cormorant Garamond', serif;
@@ -201,10 +202,10 @@ ul, li{
 .about__text{
     margin-left: auto;
     margin-right: auto;
-    width: 543px;
     font-weight: 400;
     padding-top: 19px;
     padding-bottom: 28px;
+    font-size: 20px;
 }
 
 .about_btn{
