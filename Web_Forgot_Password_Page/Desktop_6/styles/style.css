@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.navbar {
+  height: auto;
+}
+.navbar-image {
+  width: 100%;
+}
+.footer-image {
+  width: 100%;
+}
+.login-block {
+  width: 65%;
+  margin: auto;
+  height: 60vh;
+  margin-top: 3%;
+}
+.back-block {
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
+}
+.back-text {
+  font-size: 0.875rem;
+  color: rgba(142, 142, 142, 1);
+  padding-left: 1%;
+}
+
+.back-icon {
+  background: rgba(228, 228, 228, 1);
+  border-radius: 48px;
+}
+.login-text {
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 1);
+  line-height: 1.5237rem;
+  margin: 3% 0;
+}
+.inputs {
+  margin: 4% 0;
+  display: flex;
+  justify-content: space-between;
+}
+.login-input-block {
+  width: 66%;
+  display: flex;
+  align-items: center;
+}
+.login-input {
+  border: solid 1px rgba(211, 211, 211, 1);
+  border-radius: 3px;
+  height: 2.8rem;
+  width: 30%;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  text-align: center;
+}
+
+.login-input:focus {
+  outline: none;
+}
+.code-text-block {
+  width: 48%;
+  margin-left: 2%;
+}
+.code-text {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 19.5px;
+}
+.code-text-email {
+  font-weight: 600;
+}
+.buttons-block {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttons-block-text {
+  color: rgba(255, 0, 0, 1);
+  font-weight: 500;
+}
+.buttons {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cancel-text {
+  width: 50%;
+  text-align: center;
+  padding: auto;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 1rem;
+}
+.continue-btn {
+  background-color: rgba(255, 0, 0, 1);
+  border: solid 1px rgba(211, 211, 211, 1);
+  border-radius: 3px;
+  height: 2.8rem;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 1rem;
+}

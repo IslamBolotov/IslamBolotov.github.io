@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(245, 245, 245, 1);
+}
+.content-block {
+  width: 100%;
+  height: 50vh;
+  margin-top: 3%;
+}
+.navbar {
+  height: auto;
+}
+.navbar-image {
+  width: 100%;
+}
+.login-block {
+  width: 60%;
+  margin: auto;
+}
+.login {
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: rgba(255, 0, 0, 1);
+}
+.regist {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 1.75rem;
+}
+.login-text {
+  width: 90%;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 1);
+  line-height: 1.5237rem;
+  margin: 1% 0;
+}
+.inputs {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+.login-input-block,
+.password-input-block {
+  background-color: white;
+  border: solid 1px rgba(211, 211, 211, 1);
+  border-radius: 3px;
+  height: 2.8rem;
+  width: 33%;
+  display: flex;
+  padding-left: 2%;
+}
+.login-input {
+  height: 100%;
+  width: 93%;
+  padding-left: 3%;
+  border: 0;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+}
+.password-input {
+  height: 100%;
+  width: 80%;
+  padding-left: 3%;
+  border: 0;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+}
+.login-input::placeholder {
+  font-weight: 500;
+}
+.password-input::placeholder {
+  font-weight: 500;
+}
+.password-eye {
+  width: 8%;
+}
+.login-input:focus {
+  outline: none;
+}
+.password-input:focus {
+  outline: none;
+}
+.login-icon,
+.password-icon {
+  width: 7%;
+}
+.login-button-block {
+  background-color: rgba(255, 0, 0, 1);
+  border: solid 1px rgba(211, 211, 211, 1);
+  border-radius: 3px;
+  height: 2.8rem;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.button-text {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+}
+.forgot-pass-text {
+  font-weight: 500;
+  color: rgba(255, 0, 0, 1);
+  line-height: 1.2188rem;
+}
+.forgot-pass-block {
+  margin: 2% 0;
+}
+.footer-image {
+  width: 100%;
+}
+.remember-login {
+  margin-top: 3%;
+  width: 22%;
+  display: flex;
+  justify-content: space-around;
+}
+.remember-login-checkbox {
+  border: 1px solid rgba(142, 142, 142, 1);
+}
+.remember-login-text {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+}

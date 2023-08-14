@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(245, 245, 245, 1);
+}
+.content-block {
+  width: 100%;
+  height: 80vh;
+  margin-top: 3%;
+}
+.navbar {
+  height: auto;
+}
+.navbar-image {
+  width: 100%;
+}
+.footer-image {
+  width: 100%;
+}
+.personal-block {
+  width: 62%;
+  margin: auto;
+  display: flex;
+}
+.personal-area-block {
+  width: 30%;
+}
+.personal-area-title {
+  color: rgba(255, 0, 0, 1);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.personal-area-list {
+  margin: 5% 0;
+}
+.personal-area-list > li {
+  list-style-type: none;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 3rem;
+  padding-left: 7%;
+  width: 90%;
+  margin-right: 2%;
+}
+.personal-item-text {
+  margin-left: 3%;
+}
+.personal-area-list > li:first-child {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+}
+.personal-data-block {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 2px;
+  padding: 1% 2%;
+  width: 70%;
+}
+.personal-data-title {
+  padding: 2%;
+  display: flex;
+  align-items: center;
+}
+.person-name {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 1);
+  margin-left: 3%;
+}
+.add-number-block {
+  display: flex;
+  background-color: rgba(239, 239, 239, 1);
+  border-radius: 2px;
+  height: 4.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+.add-number-text-block {
+  display: flex;
+  flex-direction: column;
+}
+.add-number-text {
+  font-weight: 600;
+  margin-bottom: 2%;
+}
+.add-number-info-text {
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 500;
+}
+.add-number-plus {
+  width: 3%;
+}
+.phone-icon {
+  width: 3%;
+  height: auto;
+}
+.email-block,
+.password-block {
+  display: flex;
+  gap: 2% 2%;
+  align-items: center;
+  padding: 0 1.3%;
+  margin-top: 5%;
+}
+.email-text,
+.password-text {
+  font-weight: 600;
+}
+.person-email {
+  font-weight: 500;
+  margin-left: 6%;
+}
+.password-date {
+  font-weight: 500;
+
+  margin-left: 3.8%;
+}
+/* modal------------- */
+.modal-block {
+  width: 45%;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.09);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 3% 2%;
+}
+.modal-add-number {
+  width: 93%;
+}
+.modal-title {
+  font-weight: 600;
+}
+.modal-info-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 2%;
+}
+.change-number-text {
+  font-weight: 600;
+}
+.modal-input-block {
+  width: 70%;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-number {
+  height: 3rem;
+  border: 1px solid rgba(211, 211, 211, 1);
+  width: 45%;
+  padding-left: 2%;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  font-size: 1rem;
+}
+.modal-number::placeholder {
+  font-weight: 500;
+}
+.modal-number:focus {
+  outline: none;
+}
+.modal-number-text {
+  width: 50%;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
+.modal-buttons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 3%;
+}
+.modal-btn-save {
+  height: 3rem;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+.modal-btn-cancel {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 8%;
+}
