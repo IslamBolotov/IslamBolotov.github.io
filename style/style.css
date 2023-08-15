@@ -1,0 +1,243 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  max-width: 1105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.middle-block {
+  display: flex;
+  gap: 48px;
+  margin-left: 85px;
+  margin-right: 94px;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  border: 1px solid #ABB8C3;
+  background: #FFF;
+  padding: 6px 14px 6px 0;
+  height: 27px;
+  gap: 8px;
+}
+
+.whatsapp-icon {
+  width: 27px;
+  height: 27px;
+  background-color: rgba(37, 211, 102, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-text {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phone-text {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 100px;
+}
+
+.social__sets {
+  display: flex;
+  gap: 8px;
+}
+
+.social__sets-item {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.bottom__content {
+  width: 100%;
+  background-color: #000;
+  height: 54px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services {
+  display: flex;
+  gap: 16px;
+}
+
+.service-items {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.submit__application {
+  width: 140px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #F00;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  margin-left: 24px;
+}
+
+.footer {
+  width: 100%;
+  background: #292929;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 33px;
+  gap: 50px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts-phone {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.contacts-text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
+.footer-services {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-management {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-valutes {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contacts-transparent__text {
+  color: rgba(255, 255, 255, 0.50);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-input {
+  width: 240px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #FFF;
+  padding: 13px 16px;
+
+  border: none;
+}
+
+.form-btn {
+  width: 240px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  background: #F00;
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
