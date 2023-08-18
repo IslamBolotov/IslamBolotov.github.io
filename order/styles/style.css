@@ -428,3 +428,52 @@
 .tick-icon {
   position: absolute;
 }
+
+.input-blocks {
+  display: flex;
+  gap: 8px;
+}
+
+@media screen and (max-width: 425px) {
+  .back-block {
+    display: none;
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .order-details {
+    width: calc(100% - 32px);
+  }
+
+  .card-details {
+    width: 100%;
+  }
+
+  .information {
+    width: calc(100% - 32px);
+    margin: 0;
+  }
+
+  .input-blocks {
+    width: 100%;
+  }
+
+  .card-data {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .card-data input {
+    width: 100%;
+  }
+
+  .card-warning__text {
+    font-size: 12px;
+  }
+
+  #box {
+    width: calc(100% - 32px);
+  }
+}
