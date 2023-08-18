@@ -248,3 +248,26 @@
   line-height: normal;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 425px) {
+  .form, .footer-management, .footer-valutes {
+    display: none;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 24px;
+  }
+  .services, .submit__application, .social__sets, .profile {
+    display: none;
+  }
+
+  .header-content {
+    flex-direction: column;
+  }
+
+  .middle-block {
+    flex-direction: column;
+  }
+}
