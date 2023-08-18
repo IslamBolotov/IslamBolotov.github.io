@@ -110,8 +110,9 @@
 .bottom__content {
   width: 100%;
   background-color: #000;
-  height: 54px;
+  height: auto;
   flex-shrink: 0;
+  padding: 10px 25px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -129,6 +130,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  text-wrap: nowrap;
 }
 
 .submit__application {
@@ -249,6 +251,41 @@
   text-transform: uppercase;
 }
 
+.whatsapp__mobile {
+  display: none;
+}
+
+.flags__block {
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile {
+  display: none;
+}
+
+.menu-burger {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .header-content, .middle-block {
+    flex-wrap: wrap;
+  }
+
+  .bottom__content {
+    min-height: 54px;
+  }
+  
+  .services {
+    flex-wrap: wrap;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .form, .footer-management, .footer-valutes {
     display: none;
@@ -259,15 +296,60 @@
     align-items: flex-start;
     padding: 24px;
   }
-  .services, .submit__application, .social__sets, .profile {
+  .services, .social__sets, .profile {
     display: none;
   }
 
   .header-content {
     flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 16px 24px;
   }
 
   .middle-block {
     flex-direction: column;
+    justify-content: flex-start;
+    margin: 0;
+    width: 100%;
+    gap: 17px;
+    margin-top: 16px;
   }
+
+  .whatsapp {
+    display: none;
+  }
+
+  .whatsapp__mobile {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  .flags__block {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-content-logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu-burger {
+    display: block;
+  }
+
+  .user-profile {
+    display: block;
+  }
+
+  .bottom__content {
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+
 }
