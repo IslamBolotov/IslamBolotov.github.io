@@ -206,6 +206,33 @@
   font-weight: 500;
   margin-bottom: 2%;
 }
+.reason-textarea {
+  width: 92%;
+  padding: 14px 12px;
+  border-radius: 2px;
+  border: 1px solid #D3D3D3;
+  background: #FFF;
+  color: #8E8E8E;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  outline: none;
+  resize: none;
+}
+.reason-textarea-counter {
+  margin-top: -25px;
+  margin-right: 12%;
+  margin-bottom: 24px;
+  color: #8E8E8E;
+  text-align: right;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 .reason-input-block {
   height: 9.2rem;
   flex-direction: column;
