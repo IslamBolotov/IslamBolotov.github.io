@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../../style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,7 +16,67 @@
   <body>
     <div class="container">
       <!-- !navber start -->
-      <img class="navbar-image" src="./icons/navBar.png" alt="" />
+      <header class="header">
+        <div class="header-content">
+          <div class="header-content-logo">
+            <img src="../../icons/logo.svg" alt="" />
+            <div class="whatsapp whatsapp__mobile">
+              <div class="whatsapp-icon">
+                <img src="../../icons/whatsapp.svg" alt="" />
+              </div>
+              <h5 class="whatsapp-text">Чат со специалистом</h5>
+            </div>
+          </div>
+          <div class="middle-block">
+            <div class="whatsapp">
+              <div class="whatsapp-icon">
+                <img src="../../icons/whatsapp.svg" alt="" />
+              </div>
+              <h5 class="whatsapp-text">Чат со специалистом</h5>
+            </div>
+            <div class="phone">
+              <img src="../../icons/phone.svg" alt="" />
+              <h5 class="phone-text">8-800-700-6146</h5>
+            </div>
+            <div class="social__sets">
+              <div class="social__sets-item">
+                <img src="../../icons/telegram.svg" alt="" />
+              </div>
+              <div class="social__sets-item">
+                <img src="../../icons/vk.svg" alt="" />
+              </div>
+              <div class="social__sets-item">
+                <img src="../../icons/instagram.svg" alt="" />
+              </div>
+            </div>
+            <div class="flags__block">
+              <div class="flags">
+                <img src="../../icons/usa.png" alt="" />
+                <img src="../../icons/russia.png" alt="" />
+                <img src="../../icons/kg.png" alt="" />
+              </div>
+              <img
+                class="user-profile"
+                src="../../icons/user-profile.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <h5 class="profile">Личный кабинет</h5>
+        </div>
+        <div class="bottom__content">
+          <div class="services">
+            <h5 class="service-items">Услуги брокера</h5>
+            <h5 class="service-items">Персональный трейдинг</h5>
+            <h5 class="service-items">Торговые сигналы</h5>
+            <h5 class="service-items">Инвестиционные услуги</h5>
+            <h5 class="service-items">Обучение и развитие</h5>
+            <h5 class="service-items">Управление криптоактивами</h5>
+          </div>
+          <img class="menu-burger" src="../../icons/menu-burger.svg" alt="" />
+          <button class="submit__application">Оставить заявку</button>
+        </div>
+      </header>
       <!-- !navbar end -->
       <!-- TODO ---------------------------------------- -->
       <div class="content-block">
@@ -24,31 +85,31 @@
             <span class="personal-area-title">Личный кабинет</span>
             <ul class="personal-area-list">
               <li>
-                <img src="./icons/pers-data.svg" alt="" /><span
+                <img src="../../icons/pers-data.svg" alt="" /><span
                   class="personal-item-text"
                   >Личные данные</span
                 >
               </li>
               <li>
-                <img src="./icons/balans.svg" alt="" /><span
+                <img src="../../icons/balans.svg" alt="" /><span
                   class="personal-item-text"
                   >Баланс</span
                 >
               </li>
               <li>
-                <img src="./icons/verification.svg" alt="" /><span
+                <img src="../../icons/verification.svg" alt="" /><span
                   class="personal-item-text"
                   >Верификация</span
                 >
               </li>
               <li>
-                <img src="./icons/chat.svg" alt="" /><span
+                <img src="../../icons/chat.svg" alt="" /><span
                   class="personal-item-text"
                   >Чат-поддержка</span
                 >
               </li>
               <li>
-                <img src="./icons/logout.svg" alt="" /><span
+                <img src="../../icons/logout.svg" alt="" /><span
                   class="personal-item-text"
                   >Выйти из кабинета</span
                 >
@@ -57,11 +118,15 @@
           </div>
           <div class="personal-data-block">
             <div class="personal-data-title">
-              <img src="./icons/profile.svg" alt="" />
+              <img src="../../icons/profile.svg" alt="" />
               <span class="person-name">Иванов Иван Иванович</span>
             </div>
             <div class="add-number-block">
-              <img class="phone-icon" src="./icons/phone.svg" alt="" />
+              <img
+                class="phone-icon"
+                src="../../icons/black-phone.svg"
+                alt=""
+              />
               <div class="add-number-text-block">
                 <span class="add-number-text">Добавьте телефон</span>
                 <span class="add-number-info-text"
@@ -69,15 +134,15 @@
                   ACapital</span
                 >
               </div>
-              <img src="./icons/plus.svg" alt="" class="add-number-plus" />
+              <img src="../../icons/plus.svg" alt="" class="add-number-plus" />
             </div>
             <div class="email-block">
-              <img src="./icons/mail-01.svg" alt="" />
+              <img src="../../icons/mail-01.svg" alt="" />
               <span class="email-text">Почта</span>
               <span class="person-email">iv-ivan@gmail.com</span>
             </div>
             <div class="password-block">
-              <img src="./icons/key-01.svg" alt="" />
+              <img src="../../icons/key-01.svg" alt="" />
               <span class="password-text">Пароль</span>
               <span class="password-date">Установлен 10 августа 2023</span>
             </div>
@@ -86,7 +151,7 @@
       </div>
       <!-- !modal start -->
       <div class="modal-block">
-        <img class="icon-key" src="./icons/key-01.svg" alt="" />
+        <img class="icon-key" src="../../icons/key-01.svg" alt="" />
         <div class="modal-password-setting">
           <p class="modal-title">Установка пароля</p>
           <p class="modal-info-text">
@@ -102,9 +167,50 @@
       </div>
       <!-- !modal end -->
       <!-- !footer -->
-      <div class="footer">
-        <img src="./icons/footer.png" alt="" class="footer-image" />
-      </div>
+      <footer class="footer">
+        <div class="contacts">
+          <h3 class="contacts-phone">8-800-700-6146</h3>
+          <h3 class="contacts-phone">+99655 069 20 80</h3>
+          <h3 class="contacts-phone">+7 968 555 01 75</h3>
+          <h4 class="contacts-text">Контакты</h4>
+          <h4 class="contacts-text">Документы</h4>
+          <h4 class="contacts-text">О нас</h4>
+          <div class="social__sets">
+            <div class="social__sets-item bg-white">
+              <img src="../../icons/telegram-black.svg" alt="" />
+            </div>
+            <div class="social__sets-item bg-white">
+              <img src="../../icons/vk-black.svg" alt="" />
+            </div>
+            <div class="social__sets-item bg-white">
+              <img src="../../icons/instagram-black.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-services">
+          <h4 class="contacts-text">Персональный брокер</h4>
+          <h4 class="contacts-text">Услуги брокера</h4>
+          <h4 class="contacts-text">Торговые сигналы</h4>
+          <h4 class="contacts-text">Инвестиционные услуги</h4>
+        </div>
+        <div class="footer-management">
+          <h4 class="contacts-text">Структура управления</h4>
+          <h4 class="contacts-text">Обучение и развитие</h4>
+          <h4 class="contacts-text">Новости</h4>
+          <h4 class="contacts-text">Вебинары</h4>
+        </div>
+        <div class="footer-valutes">
+          <h4 class="contacts-transparent__text">Валюты</h4>
+          <h4 class="contacts-text">Конвертация валют</h4>
+          <h4 class="contacts-text">Курсы</h4>
+          <h4 class="contacts-text">Утренний обзор</h4>
+        </div>
+        <form action="" class="form">
+          <input type="text" class="form-input" placeholder="Имя" />
+          <input type="text" class="form-input" placeholder="Телефон" />
+          <button class="form-btn">Заказать звонок</button>
+        </form>
+      </footer>
     </div>
   </body>
 </html>

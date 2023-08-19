@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  width: 100%;
+  height: auto;
+  background-color: rgba(245, 245, 245, 1);
+}
+
+.login-block {
+  width: 60%;
+  margin: auto;
+  height: 70vh;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.back-block {
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
+}
+.back-text {
+  font-size: 0.875rem;
+  color: rgba(142, 142, 142, 1);
+  padding-left: 1%;
+}
+
+.back-icon {
+  background: rgba(228, 228, 228, 1);
+  border-radius: 48px;
+}
+.login-text {
+  width: 90%;
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 1);
+  line-height: 1.5237rem;
+  margin: 3% 0;
+}
+.inputs {
+  margin-top: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+.login-input-block {
+  background-color: white;
+  border: solid 1px rgba(211, 211, 211, 1);
+  border-radius: 3px;
+  height: 48px;
+  width: 66%;
+  display: flex;
+  padding-left: 2%;
+}
+.login-input {
+  height: 100%;
+  width: 93%;
+  padding-left: 2%;
+  border: 0;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.login-input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.login-input:focus {
+  outline: none;
+}
+.login-icon {
+  width: 3.5%;
+}
+.login-button {
+  background-color: rgba(255, 0, 0, 1);
+  border: solid 1px rgba(211, 211, 211, 1);
+  border-radius: 3px;
+  height: 48px;
+  width: 33%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.footer-image {
+  width: 100%;
+}
+
+@media all and (max-width: 425px) {
+  .login-block {
+    width: 95%;
+    /* margin-left: 4%; */
+  }
+  .login-text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
+  .inputs {
+    flex-direction: column;
+  }
+  .login-input-block {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .login-button {
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  .login-icon {
+    width: 4.5%;
+  }
+}

@@ -6,13 +6,14 @@
 }
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgba(245, 245, 245, 1);
 }
 .content-block {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   margin-top: 3%;
+  margin-bottom: 3%;
 }
 .navbar {
   height: auto;
@@ -78,7 +79,7 @@
 .password-block {
   display: flex;
   border-radius: 2px;
-  height: 4rem;
+  height: 60px;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
@@ -151,4 +152,49 @@
 .password-date {
   font-weight: 500;
   margin-left: 6.5%;
+}
+
+@media all and (max-width: 425px) {
+  .personal-area-list {
+    display: none;
+  }
+  .personal-area-block h5 {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 2% 0;
+  }
+  .personal-block {
+    width: 90%;
+    flex-direction: column;
+  }
+  .personal-area-block {
+    width: 100%;
+  }
+  .personal-data-block {
+    width: 100%;
+    margin-top: 5%;
+  }
+  .add-number-block {
+    margin-top: 3%;
+  }
+  .password-block {
+    margin-bottom: 4%;
+  }
+  .add-number-text-block {
+    width: 80%;
+  }
+  .add-number-plus {
+    width: 5%;
+  }
+  .phone-icon {
+    width: 6%;
+  }
+  .person-email {
+    margin-left: 11%;
+  }
+  .password-date {
+    margin-left: 7%;
+  }
 }

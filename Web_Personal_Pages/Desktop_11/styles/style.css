@@ -7,19 +7,15 @@
 body {
   font-size: 16px;
 }
-@media all and (max-width: 769px) {
-  body {
-    font-size: 8px;
-  }
-}
+
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgba(245, 245, 245, 1);
 }
 .content-block {
   width: 100%;
-  height: 80vh;
+  height: 135vh;
   margin-top: 3%;
 }
 .navbar {
@@ -66,7 +62,6 @@ body {
 }
 .personal-data-block {
   border-radius: 2px;
-  padding: 0 2%;
   width: 70%;
 }
 .cards-block {
@@ -74,17 +69,27 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.visa-card-block {
+.visa-card-block,
+.master-card-block,
+.add-card-block {
   background-color: rgba(255, 255, 255, 1);
   width: 31%;
   display: flex;
   height: 3.5vw;
   align-items: start;
   padding: 2%;
-  border: 1px solid rgba(255, 0, 0, 1);
   border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 1);
 }
-.visa-number-block {
+.add-card-block {
+  align-items: center;
+  justify-content: center;
+}
+.visa-card-block {
+  border: 1px solid rgba(255, 0, 0, 1);
+}
+.visa-number-block,
+.master-number-block {
   display: flex;
   flex-direction: column;
   margin-left: 6%;
@@ -97,17 +102,175 @@ body {
   padding: 1% 3%;
   height: auto;
 }
-.visa-icon {
+.master-icon-block {
+  width: 30%;
+  border: 1px solid rgba(239, 239, 239, 1);
+  border-radius: 2px;
+  padding: 1% 3%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+.visa-icon,
+.master-icon {
   width: 100%;
 }
-.visa-number {
+.visa-number,
+.master-number {
   font-weight: 500;
   font-size: 0.75rem;
 }
-.visa-balans {
+.visa-balans,
+.master-balans {
   font-weight: 500;
   font-size: 0.875rem;
 }
-.visa-balans-zero {
+.visa-balans-zero,
+.master-balans-zero {
   color: rgba(0, 0, 0, 0.5);
+}
+.add-card-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgba(255, 0, 0, 1);
+}
+.debit-card-block {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  margin-top: 3%;
+  padding: 2.5%;
+}
+.debit-card {
+  width: 50%;
+}
+.debit-number-block {
+  margin-top: 2%;
+}
+.debit-card-text,
+.debit-balans-text {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.debit-number-text,
+.debit-balans-money {
+  font-size: 2rem;
+}
+.debit-balans-money {
+  margin-top: 3%;
+}
+.debit-visa-icon {
+  width: 20%;
+}
+.debit-buttons-block {
+  width: 90%;
+  display: flex;
+}
+.debit-topup-btn {
+  width: 49%;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(239, 239, 239, 1);
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-right: 0;
+  height: 3vw;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.debit-pay-btn {
+  width: 49%;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(239, 239, 239, 1);
+  height: 3vw;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  cursor: pointer;
+}
+.debit-balans {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5% 2%;
+}
+.card-transaction {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  margin-top: 3%;
+  padding: 2.5%;
+}
+.transaction-title-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.transaction-red-title {
+  font-weight: 600;
+  color: rgba(255, 0, 0, 1);
+  margin-top: 1.8%;
+}
+.money-transfer-list {
+  width: 100%;
+  margin-top: 4%;
+}
+.transfer-date {
+  font-weight: 600;
+}
+.transfer-list-item {
+  width: 100%;
+  display: flex;
+  margin-top: 3%;
+  justify-content: space-between;
+}
+.transfer-item-profile {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.transfer-name-block {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 8%;
+}
+.transfer-profile-icon {
+  width: 20%;
+}
+.transfer-name {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.transaction-status-text,
+.transfer-card {
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.transfer-amount-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.transfer-amount-plus {
+  color: rgba(0, 150, 81, 1);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.transfer-amount-minus {
+  color: rgba(255, 0, 0, 1);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media all and (max-width: 425px) {
+  .container {
+    height: auto;
+  }
+  .content-block {
+    height: auto;
+  }
 }

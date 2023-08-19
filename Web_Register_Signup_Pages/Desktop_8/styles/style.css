@@ -6,19 +6,17 @@
 }
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   background-color: rgba(245, 245, 245, 1);
 }
 .content-block {
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   margin-top: 3%;
+  margin-bottom: 3%;
 }
 .navbar {
   height: auto;
-}
-.footer-image {
-  width: 100%;
 }
 .navbar-image {
   width: 100%;
@@ -32,15 +30,18 @@
   font-size: 1.75rem;
   color: rgba(0, 0, 0, 0.5);
 }
+.adapt-login {
+  display: none;
+}
 .regist {
   color: rgba(255, 0, 0, 1);
   font-weight: 600;
   font-size: 1.75rem;
 }
 .login-text {
-  width: 90%;
+  width: 100%;
   font-weight: 500;
-  font-size: 1.25rem;
+  font-size: 16px;
   color: rgba(0, 0, 0, 1);
   line-height: 1.5237rem;
   margin: 1% 0;
@@ -57,13 +58,14 @@
   background-color: white;
   border: solid 1px rgba(211, 211, 211, 1);
   border-radius: 3px;
-  height: 2.8rem;
+  height: 48px;
   width: 70%;
   display: flex;
   padding-left: 2%;
   color: rgba(0, 0, 0, 1);
   font-weight: 500;
   margin-bottom: 2%;
+  font-size: 16px;
 }
 .login-input,
 .password-input,
@@ -79,6 +81,7 @@
 .password-input,
 .passRepeat-input::placeholder {
   font-weight: 500;
+  font-size: 16px;
 }
 
 .login-input,
@@ -93,19 +96,66 @@
 .email-icon {
   width: 3.5%;
 }
-.login-button-block {
+.login-button {
   background-color: rgba(255, 0, 0, 1);
   border: solid 1px rgba(211, 211, 211, 1);
   border-radius: 3px;
-  height: 2.8rem;
+  height: 48px;
   width: 70%;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: center;
   cursor: pointer;
-}
-.button-text {
   color: rgba(255, 255, 255, 1);
   font-weight: 600;
+  font-size: 16px;
+}
+
+.footer-image {
+  width: 100%;
+}
+
+@media all and (max-width: 425px) {
+  .container {
+    height: auto;
+  }
+  .content-block {
+    height: auto;
+  }
+  * {
+    font-size: 11.5px;
+  }
+  .signup-block {
+    width: 90%;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .login {
+    display: none;
+  }
+  .login-text {
+    margin: 2.5% 0;
+  }
+  .adapt-login {
+    display: inline-block;
+  }
+  .login-input-block,
+  .password-input-block,
+  .email-input-block,
+  .passRepeat-input-block {
+    width: 100%;
+    margin-bottom: 4%;
+  }
+  .login-button {
+    width: 100%;
+    margin: 8% 0;
+  }
+  .login-icon,
+  .password-icon,
+  .email-icon {
+    width: 5.5%;
+  }
 }

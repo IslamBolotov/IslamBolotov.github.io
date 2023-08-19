@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../../style/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,9 +15,67 @@
   </head>
   <body>
     <div class="container">
-      <!-- !navber start -->
-      <img class="navbar-image" src="./icons/navBar.png" alt="" />
-      <!-- !navbar end -->
+      <header class="header">
+        <div class="header-content">
+          <div class="header-content-logo">
+            <img src="../../icons/logo.svg" alt="" />
+            <div class="whatsapp whatsapp__mobile">
+              <div class="whatsapp-icon">
+                <img src="../../icons/whatsapp.svg" alt="" />
+              </div>
+              <h5 class="whatsapp-text">Чат со специалистом</h5>
+            </div>
+          </div>
+          <div class="middle-block">
+            <div class="whatsapp">
+              <div class="whatsapp-icon">
+                <img src="../../icons/whatsapp.svg" alt="" />
+              </div>
+              <h5 class="whatsapp-text">Чат со специалистом</h5>
+            </div>
+            <div class="phone">
+              <img src="../../icons/phone.svg" alt="" />
+              <h5 class="phone-text">8-800-700-6146</h5>
+            </div>
+            <div class="social__sets">
+              <div class="social__sets-item">
+                <img src="../../icons/telegram.svg" alt="" />
+              </div>
+              <div class="social__sets-item">
+                <img src="../../icons/vk.svg" alt="" />
+              </div>
+              <div class="social__sets-item">
+                <img src="../../icons/instagram.svg" alt="" />
+              </div>
+            </div>
+            <div class="flags__block">
+              <div class="flags">
+                <img src="../../icons/usa.png" alt="" />
+                <img src="../../icons/russia.png" alt="" />
+                <img src="../../icons/kg.png" alt="" />
+              </div>
+              <img
+                class="user-profile"
+                src="../../icons/user-profile.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <h5 class="profile">Личный кабинет</h5>
+        </div>
+        <div class="bottom__content">
+          <div class="services">
+            <h5 class="service-items">Услуги брокера</h5>
+            <h5 class="service-items">Персональный трейдинг</h5>
+            <h5 class="service-items">Торговые сигналы</h5>
+            <h5 class="service-items">Инвестиционные услуги</h5>
+            <h5 class="service-items">Обучение и развитие</h5>
+            <h5 class="service-items">Управление криптоактивами</h5>
+          </div>
+          <img class="menu-burger" src="../../icons/menu-burger.svg" alt="" />
+          <button class="submit__application">Оставить заявку</button>
+        </div>
+      </header>
       <!-- TODO ---------------------------------------- -->
       <div class="content-block">
         <div class="personal-block">
@@ -24,31 +83,31 @@
             <span class="personal-area-title">Личный кабинет</span>
             <ul class="personal-area-list">
               <li>
-                <img src="./icons/pers-data.svg" alt="" /><span
+                <img src="../../icons/pers-data.svg" alt="" /><span
                   class="personal-item-text"
                   >Личные данные</span
                 >
               </li>
               <li>
-                <img src="./icons/balans.svg" alt="" /><span
+                <img src="../../icons/balans.svg" alt="" /><span
                   class="personal-item-text"
                   >Баланс</span
                 >
               </li>
               <li>
-                <img src="./icons/verification.svg" alt="" /><span
+                <img src="../../icons/verification.svg" alt="" /><span
                   class="personal-item-text"
                   >Верификация</span
                 >
               </li>
               <li>
-                <img src="./icons/chat.svg" alt="" /><span
+                <img src="../../icons/chat.svg" alt="" /><span
                   class="personal-item-text"
                   >Чат-поддержка</span
                 >
               </li>
               <li>
-                <img src="./icons/logout.svg" alt="" /><span
+                <img src="../../icons/logout.svg" alt="" /><span
                   class="personal-item-text"
                   >Выйти из кабинета</span
                 >
@@ -59,7 +118,7 @@
             <div class="cards-block">
               <div class="visa-card-block">
                 <div class="visa-icon-block">
-                  <img class="visa-icon" src="./icons/visa.svg" alt="" />
+                  <img class="visa-icon" src="../../icons/visa.svg" alt="" />
                 </div>
                 <div class="visa-number-block">
                   <span class="visa-number">**** 1234</span
@@ -69,27 +128,157 @@
                 </div>
               </div>
 
-              <div class="visa-card-block">
-                <div class="visa-icon-block">
-                  <img class="visa-icon" src="./icons/master.svg" alt="" />
+              <div class="master-card-block">
+                <div class="master-icon-block">
+                  <img class="visa-icon" src="../../icons/master.svg" alt="" />
                 </div>
-                <div class="visa-number-block">
-                  <span class="visa-number">**** 1234</span>
-                  <span class="visa-balans"
-                    >1,900.<span class="visa-balans-zero">00c</span></span
+                <div class="master-number-block">
+                  <span class="master-number">**** 5678</span>
+                  <span class="master-balans"
+                    >2,700.<span class="master-balans-zero">63c</span></span
                   >
                 </div>
               </div>
 
-              <div class="visa-card-block">
-                <div class="visa-icon-block">
-                  <img class="visa-icon" src="./icons/visa.svg" alt="" />
+              <div class="add-card-block">
+                <span class="add-card-text">Добавить карту +</span>
+              </div>
+            </div>
+            <div class="debit-card-block">
+              <div class="debit-card">
+                <span class="debit-card-text">ДЕБЕТОВАЯ КАРТА</span>
+                <div class="debit-number-block">
+                  <span class="debit-number-text">**** 1234</span>
+                  <img
+                    class="debit-visa-icon"
+                    src="../../icons/visa.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="visa-number-block">
-                  <span class="visa-number">**** 1234</span
-                  ><span class="visa-balans"
-                    >1,900.<span class="visa-balans-zero">00c</span></span
-                  >
+                <div class="debit-buttons-block">
+                  <button class="debit-topup-btn">Пополнить</button>
+                  <button class="debit-pay-btn">Оплатить</button>
+                </div>
+              </div>
+              <div class="debit-balans">
+                <span class="debit-balans-text">БАЛАНС</span>
+                <span class="debit-balans-money">1,900.00c</span>
+              </div>
+            </div>
+            <div class="card-transaction">
+              <div class="transaction-title-block">
+                <h2 class="transaction-title-text">Операции по карте</h2>
+                <h4 class="transaction-red-title">За последний месяц</h4>
+              </div>
+              <div class="money-transfer-list">
+                <span class="transfer-date">8 августа</span>
+                <div class="transfer-list-item">
+                  <div class="transfer-item-profile">
+                    <img
+                      class="transfer-profile-icon"
+                      src="../../icons/profile.svg"
+                      alt=""
+                    />
+                    <div class="transfer-name-block">
+                      <span class="transfer-name">Анна Иванова</span>
+                      <span class="transaction-status-text">Перевод</span>
+                    </div>
+                  </div>
+                  <div class="transfer-amount-block">
+                    <span class="transfer-amount-plus">+100.00с</span>
+                    <span class="transfer-card">Дебетовая карта</span>
+                  </div>
+                </div>
+                <div class="transfer-list-item">
+                  <div class="transfer-item-profile">
+                    <img
+                      class="transfer-profile-icon"
+                      src="../../icons/profile.svg"
+                      alt=""
+                    />
+                    <div class="transfer-name-block">
+                      <span class="transfer-name">Евгений Иванов</span>
+                      <span class="transaction-status-text">Перевод</span>
+                    </div>
+                  </div>
+                  <div class="transfer-amount-block">
+                    <span class="transfer-amount-minus">-200.00с</span>
+                    <span class="transfer-card">Дебетовая карта</span>
+                  </div>
+                </div>
+              </div>
+              <div class="money-transfer-list">
+                <span class="transfer-date">8 августа</span>
+                <div class="transfer-list-item">
+                  <div class="transfer-item-profile">
+                    <img
+                      class="transfer-profile-icon"
+                      src="../../icons/profile.svg"
+                      alt=""
+                    />
+                    <div class="transfer-name-block">
+                      <span class="transfer-name">Анна Иванова</span>
+                      <span class="transaction-status-text">Перевод</span>
+                    </div>
+                  </div>
+                  <div class="transfer-amount-block">
+                    <span class="transfer-amount-plus">+100.00с</span>
+                    <span class="transfer-card">Дебетовая карта</span>
+                  </div>
+                </div>
+                <div class="transfer-list-item">
+                  <div class="transfer-item-profile">
+                    <img
+                      class="transfer-profile-icon"
+                      src="../../icons/profile.svg"
+                      alt=""
+                    />
+                    <div class="transfer-name-block">
+                      <span class="transfer-name">Евгений Иванов</span>
+                      <span class="transaction-status-text">Перевод</span>
+                    </div>
+                  </div>
+                  <div class="transfer-amount-block">
+                    <span class="transfer-amount-minus">-200.00с</span>
+                    <span class="transfer-card">Дебетовая карта</span>
+                  </div>
+                </div>
+              </div>
+              <div class="money-transfer-list">
+                <span class="transfer-date">8 августа</span>
+                <div class="transfer-list-item">
+                  <div class="transfer-item-profile">
+                    <img
+                      class="transfer-profile-icon"
+                      src="../../icons/profile.svg"
+                      alt=""
+                    />
+                    <div class="transfer-name-block">
+                      <span class="transfer-name">Анна Иванова</span>
+                      <span class="transaction-status-text">Перевод</span>
+                    </div>
+                  </div>
+                  <div class="transfer-amount-block">
+                    <span class="transfer-amount-plus">+100.00с</span>
+                    <span class="transfer-card">Дебетовая карта</span>
+                  </div>
+                </div>
+                <div class="transfer-list-item">
+                  <div class="transfer-item-profile">
+                    <img
+                      class="transfer-profile-icon"
+                      src="../../icons/profile.svg"
+                      alt=""
+                    />
+                    <div class="transfer-name-block">
+                      <span class="transfer-name">Евгений Иванов</span>
+                      <span class="transaction-status-text">Перевод</span>
+                    </div>
+                  </div>
+                  <div class="transfer-amount-block">
+                    <span class="transfer-amount-minus">-200.00с</span>
+                    <span class="transfer-card">Дебетовая карта</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,9 +286,50 @@
         </div>
       </div>
       <!-- !footer -->
-      <div class="footer">
-        <img src="./icons/footer.png" alt="" class="footer-image" />
-      </div>
+      <footer class="footer">
+        <div class="contacts">
+          <h3 class="contacts-phone">8-800-700-6146</h3>
+          <h3 class="contacts-phone">+99655 069 20 80</h3>
+          <h3 class="contacts-phone">+7 968 555 01 75</h3>
+          <h4 class="contacts-text">Контакты</h4>
+          <h4 class="contacts-text">Документы</h4>
+          <h4 class="contacts-text">О нас</h4>
+          <div class="social__sets">
+            <div class="social__sets-item bg-white">
+              <img src="../../icons/telegram-black.svg" alt="" />
+            </div>
+            <div class="social__sets-item bg-white">
+              <img src="../../icons/vk-black.svg" alt="" />
+            </div>
+            <div class="social__sets-item bg-white">
+              <img src="../../icons/instagram-black.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="footer-services">
+          <h4 class="contacts-text">Персональный брокер</h4>
+          <h4 class="contacts-text">Услуги брокера</h4>
+          <h4 class="contacts-text">Торговые сигналы</h4>
+          <h4 class="contacts-text">Инвестиционные услуги</h4>
+        </div>
+        <div class="footer-management">
+          <h4 class="contacts-text">Структура управления</h4>
+          <h4 class="contacts-text">Обучение и развитие</h4>
+          <h4 class="contacts-text">Новости</h4>
+          <h4 class="contacts-text">Вебинары</h4>
+        </div>
+        <div class="footer-valutes">
+          <h4 class="contacts-transparent__text">Валюты</h4>
+          <h4 class="contacts-text">Конвертация валют</h4>
+          <h4 class="contacts-text">Курсы</h4>
+          <h4 class="contacts-text">Утренний обзор</h4>
+        </div>
+        <form action="" class="form">
+          <input type="text" class="form-input" placeholder="Имя" />
+          <input type="text" class="form-input" placeholder="Телефон" />
+          <button class="form-btn">Заказать звонок</button>
+        </form>
+      </footer>
     </div>
   </body>
 </html>
